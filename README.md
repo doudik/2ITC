@@ -8,7 +8,7 @@
 			<tr>
 				<td>Miroslav</td>
 				<td>Douda</td>
-			</tr>xxxxxx
+			</tr>
 		</table>
 	</body>
 </html>
