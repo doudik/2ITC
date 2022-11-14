@@ -1,0 +1,17 @@
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\bin\Debug\net6.0-windows\ZOO - 2ITC.exe
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\bin\Debug\net6.0-windows\ZOO - 2ITC.deps.json
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\bin\Debug\net6.0-windows\ZOO - 2ITC.runtimeconfig.json
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\bin\Debug\net6.0-windows\ZOO - 2ITC.dll
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\bin\Debug\net6.0-windows\ZOO - 2ITC.pdb
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO - 2ITC.csproj.AssemblyReference.cache
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO___2ITC.Form1.resources
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO - 2ITC.csproj.GenerateResource.cache
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO - 2ITC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO - 2ITC.AssemblyInfoInputs.cache
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO - 2ITC.AssemblyInfo.cs
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO - 2ITC.csproj.CoreCompileInputs.cache
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO - 2ITC.dll
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\refint\ZOO - 2ITC.dll
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO - 2ITC.pdb
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ZOO - 2ITC.genruntimeconfig.cache
+C:\Users\miram\source\repos\ZOO - 2ITC\ZOO - 2ITC\obj\Debug\net6.0-windows\ref\ZOO - 2ITC.dll
