@@ -19,13 +19,29 @@ namespace ZOO___2ITC
         //            početZaměstnanců
         float hodnoceni, vstupne;
         int kapacitaLidi, pocetZviratek, pocetVybehu, pocetZamestnancu;
-        DateTime oteviraciDoba;
+        public int KapacitaLidi {get{ return kapacitaLidi; } }
+        public int pritomnychLidi { get; set; }
         string nazev;
-        public Zoo(string nazev, float vstupne, int kapacitaLidi, DateTime oteviraciDoba) {  
+        float kasicka;       
+
+        public Zoo(string nazev, float vstupne, int kapacitaLidi) {  
             this.nazev = nazev;
             this.vstupne = vstupne;
             this.kapacitaLidi = kapacitaLidi;
-            this.oteviraciDoba = oteviraciDoba;
+            pritomnychLidi = 0;
+            kasicka = 0f;
         }
-    }
+
+        public void PridejLidi() {
+            pritomnychLidi++;
+            ZaplatVstup();
+        }
+        public void OdeberLidi() {
+            pritomnychLidi--;
+        }
+
+        void ZaplatVstup()
+        {
+            kasicka+=vstupne;
+        }
 }

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TJHhZ53vB4zzb3y1uTR2YQJX7UrwDKntf5Ea2pvXqeI+GKMDsi2tkmcuQOK4NOP7sGERsQ0qY/6dZo1EXm6XyA==",
+  "dgSpecHash": "VEoM5dvaXeTtoEPzQIObluZnVJOqIueqGHXRqn5+SzUFHRSetGEtN38Li71SJWvN9OuWf1HWAHwxBc3/CJ6rNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\miram\\source\\repos\\2ITC\\Zoo - 2ITC\\ZOO - 2ITC\\ZOO - 2ITC.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\miram\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.11\\microsoft.netcore.app.host.win-x64.6.0.11.nupkg.sha512",
+    "C:\\Users\\miram\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\miram\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\miram\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
