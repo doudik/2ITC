@@ -145,11 +145,11 @@
         private Panel panel_UI;
         private Label label_pocetSpravnychUhozu;
         private Label label_pocetUhozu;
-        private Label label_Text;
         private Button button_GenerujVetu;
         private System.Windows.Forms.Timer timer_cas;
         private Label label_CasDokonceni;
         private Label label_pocetSpravnychUhozu_Num;
         private Label label_PocetUhozu_Num;
+        public Label label_Text;
     }
 }

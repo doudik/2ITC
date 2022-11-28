@@ -8,14 +8,14 @@ namespace TypeRacer
         public Form1()
         {
             InitializeComponent();
-            Start();
+            TypeRacer.Start(this);
         }
-        
         private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
+        
             MessageBox.Show("Adawd");
             //TODO userInput
-            if ((char)e.KeyCode == vetaVCharech[index])
+            if ((char)e.KeyCode == TypeRacer.vetaVCharech[TypeRacer.index])
             {
                 //+
                 
@@ -25,7 +25,10 @@ namespace TypeRacer
                 //-
             }
         }
-        
+        private void button_GenerujVetu_Click(object sender, EventArgs e)
+        {
+            TypeRacer.ZobrazListCharu(this);
+        }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
