@@ -9,28 +9,36 @@ namespace TypeRacer
         {
             InitializeComponent();
             TypeRacer.Start(this);
+            panel_HerniOkno.Focus();
         }
         private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-        
-            MessageBox.Show("Adawd");
+            TypeRacer.KontrolaPismene(this, e);
+            //MessageBox.Show((TypeRacer.vetaVCharech[TypeRacer.index]).ToString());
             //TODO userInput
-            if ((char)e.KeyCode == TypeRacer.vetaVCharech[TypeRacer.index])
-            {
-                //+
-                
-                label_pocetSpravnychUhozu_Num.Text = (Int32.Parse(label_pocetSpravnychUhozu_Num.Text)+1).ToString();
-            }
-            else { 
-                //-
-            }
+            //if ((char)e.KeyCode == TypeRacer.vetaVCharech[TypeRacer.index])
+            //{
+            //    //+
+            //    label_pocetSpravnychUhozu_Num.Text = (Int32.Parse(label_pocetSpravnychUhozu_Num.Text) + 1).ToString();
+            //}
+            //else
+            //{
+            //    //-
+            //}
         }
         private void button_GenerujVetu_Click(object sender, EventArgs e)
         {
             TypeRacer.ZobrazListCharu(this);
+            panel_HerniOkno.Focus();
+      
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void panel1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             MessageBox.Show("as");
         }

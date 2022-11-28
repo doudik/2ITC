@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TypeRacer
 {
@@ -13,21 +14,24 @@ namespace TypeRacer
         static string[] SentencesField;
         public static char[] vetaVCharech;
         public static string VybranaVeta;
-        public static int index { get; } = 0;
-
+        public static int index { get; private set; } = 1;
 
         int VratIndex(int cislo)
         {
             return cislo;
         }
-        void KontrolaPismene(Form1 form, PreviewKeyDownEventArgs e)
+        public static void KontrolaPismene(Form1 form, PreviewKeyDownEventArgs e)
         {
-            vetaVCharech = VybranaVeta.ToCharArray();
+
             //TODO kontrola inputu 
             // -> spravne 
-            if (form.label_Text.Text[index] == (char)e.KeyCode)
+            MessageBox.Show(vetaVCharech[index].ToString());
+            if (vetaVCharech[index] == (char)e.KeyCode)
             {
-                SpravnePismenko();
+                ObarveniPismene(form); 
+                SpravnePismenko(form);
+                
+           // MessageBox.Show(e.KeyCode.ToString());
             }
             // -> spatne    
             else
@@ -35,14 +39,30 @@ namespace TypeRacer
                 ChybnePismenko();
             }
         }
-        void SpravnePismenko()
+        static void SpravnePismenko(Form1 form)
         {
-            //TODO obarvit písmenko zeleně
-
+            form.label_pocetSpravnychUhozu_Num.Text = (Int32.Parse(form.label_pocetSpravnychUhozu_Num.Text)+1).ToString();
+            index++;
         }
-        void ChybnePismenko()
+        static void ChybnePismenko()
         {
             //TODO obarvit špatné písmenko
+
+        }
+        static void ObarveniPismene(Form1 form) {
+            //form.richTextBox1.Text = form.richTextBox1.Text[index].ToString();
+            var oldStart = form.richTextBox1.SelectionStart;
+            var oldLength = form.richTextBox1.SelectionLength;
+
+            // Select the text to change
+            form.richTextBox1.Select(form.richTextBox1.TextLength - 1, 1);
+            // Change color
+            form.richTextBox1.SelectionColor = Color.Red;
+
+            // Restore selection
+            form.richTextBox1.Select(oldStart, oldLength);
+
+
 
         }
 
@@ -61,13 +81,14 @@ namespace TypeRacer
         public static void ZobrazListCharu(Form1 form)
         {
             //TODO zobrazit na UI větu
-            form.label_Text.Text = VyberNahodnouVetu(SentencesField);
+            form.richTextBox1.Text = VyberNahodnouVetu(SentencesField);
+            vetaVCharech = VybranaVeta.ToCharArray();
         }
 
         static string VyberNahodnouVetu(string[] sentencesField)
         {
             Random rnd = new Random();
-            VybranaVeta = sentencesField[rnd.Next(0, sentencesField.Length - 1)];
+            VybranaVeta = sentencesField[rnd.Next(0, sentencesField.Length - 1)].ToUpper();
             return VybranaVeta;
 
         }

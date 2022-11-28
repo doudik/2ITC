@@ -36,9 +36,11 @@
             this.button_GenerujVetu = new System.Windows.Forms.Button();
             this.label_pocetSpravnychUhozu = new System.Windows.Forms.Label();
             this.label_pocetUhozu = new System.Windows.Forms.Label();
-            this.label_Text = new System.Windows.Forms.Label();
             this.timer_cas = new System.Windows.Forms.Timer(this.components);
+            this.panel_HerniOkno = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel_UI.SuspendLayout();
+            this.panel_HerniOkno.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_UI
@@ -86,6 +88,7 @@
             // 
             // button_GenerujVetu
             // 
+            this.button_GenerujVetu.Enabled = false;
             this.button_GenerujVetu.Location = new System.Drawing.Point(31, 181);
             this.button_GenerujVetu.Name = "button_GenerujVetu";
             this.button_GenerujVetu.Size = new System.Drawing.Size(376, 40);
@@ -112,31 +115,43 @@
             this.label_pocetUhozu.TabIndex = 0;
             this.label_pocetUhozu.Text = "Počet úhozů:";
             // 
-            // label_Text
+            // panel_HerniOkno
             // 
-            this.label_Text.AutoSize = true;
-            this.label_Text.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label_Text.Location = new System.Drawing.Point(35, 59);
-            this.label_Text.Name = "label_Text";
-            this.label_Text.Size = new System.Drawing.Size(68, 30);
-            this.label_Text.TabIndex = 1;
-            this.label_Text.Text = "label1";
+            this.panel_HerniOkno.Controls.Add(this.richTextBox1);
+            this.panel_HerniOkno.Location = new System.Drawing.Point(12, 12);
+            this.panel_HerniOkno.Name = "panel_HerniOkno";
+            this.panel_HerniOkno.Size = new System.Drawing.Size(897, 760);
+            this.panel_HerniOkno.TabIndex = 2;
+            this.panel_HerniOkno.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.panel1_PreviewKeyDown);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Enabled = false;
+            this.richTextBox1.Location = new System.Drawing.Point(37, 200);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.ShortcutsEnabled = false;
+            this.richTextBox1.Size = new System.Drawing.Size(840, 168);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.TabStop = false;
+            this.richTextBox1.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1346, 784);
-            this.Controls.Add(this.label_Text);
+            this.Controls.Add(this.panel_HerniOkno);
             this.Controls.Add(this.panel_UI);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form1_PreviewKeyDown);
             this.panel_UI.ResumeLayout(false);
             this.panel_UI.PerformLayout();
+            this.panel_HerniOkno.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -148,8 +163,9 @@
         private Button button_GenerujVetu;
         private System.Windows.Forms.Timer timer_cas;
         private Label label_CasDokonceni;
-        private Label label_pocetSpravnychUhozu_Num;
         private Label label_PocetUhozu_Num;
-        public Label label_Text;
+        private Panel panel_HerniOkno;
+        public Label label_pocetSpravnychUhozu_Num;
+        public RichTextBox richTextBox1;
     }
 }
